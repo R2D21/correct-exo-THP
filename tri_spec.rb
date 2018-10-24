@@ -16,9 +16,4 @@ describe 'trie a bulle' do
     array1 = [0,1,2,4]
     expect(tri(array)).to eq(array1)
   end
-  it 'tri a bulle n° 4' do
-    array = [4,2,0,1]
-    array1 = [0,1,2,4]
-    expect(tri(array)).to eq(array1)
-  end
 end
