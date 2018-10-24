@@ -7,33 +7,24 @@
 #    By: remi <remi.boivin@epitech.eu>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/24 20:24:17 by remi              #+#    #+#              #
-#    Updated: 2018/10/24 21:28:06 by remi             ###   ########.fr        #
+#    Updated: 2018/10/24 22:21:46 by remi             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-def     tri(array = [4,87,98,45])
+def     tri(array = [4,8,98,45])
   i = 0;
   j = 0;
-  tmp2 = []
-  while i < array.size - 1
-    if array[i + 1] > array[i]
-      tmp = array[i]
-      array[i] = array[i + 1]
-      array[i + 1] = tmp
+  while i < array.size
+    while j <= i
+      if array[i] < array[j]
+        tmp = array[i]
+        array[i] = array[j]
+        array[j] = tmp
+      end
+        j += 1
     end
-    i +=1
+    j = 0
+    i += 1
   end
-  while i >= 0
-    tmp2[j] = array[i]
-    i -= 1
-    j += 1
-  end
-  return tmp2
+  return array
 end
-
-def     perform
-  array = [189,145,123,54, 25, 14,5,12,10,1,0]
-  puts "#{tri(array)}"
-end
-
-perform
