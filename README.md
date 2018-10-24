@@ -4,7 +4,7 @@
 
 Le repo contient la correction des exercices
 
-  - Suite de fibonacci
+  - Suite de fibonacci + test
   - Trie à bulle + test
 
 
@@ -12,11 +12,8 @@ Le repo contient la correction des exercices
 ```sh
 $ cd exo-THP
 $ rake
-$ ruby fibonacci/fibonacci.rb
-$ ruby tri_bulle/tri.rb
 ```
 
 ### Todos
 
  - 
- - Add Night Mode
