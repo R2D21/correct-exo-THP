@@ -6,7 +6,7 @@
 #    By: remi <remi.boivin@epitech.eu>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/24 15:04:33 by remi              #+#    #+#              #
-#    Updated: 2018/10/24 19:53:29 by remi             ###   ########.fr        #
+#    Updated: 2018/10/24 20:26:47 by remi             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ def     fibs(nb)
   return i;
 end
 
-def     rfib(index)
+def     rfibs(index)
   if (index < 0)
     return (-1);
   end
@@ -33,9 +33,12 @@ def     rfib(index)
   elsif (index == 1)
     return (1);
   else
-    return (rfib(index - 1) + rfib(index - 2));
+    return (rfibs(index - 1) + rfibs(index - 2));
   end
 end
   
-puts fibs(17);
-puts rfib(17);
+def     perform
+  puts rfibs(17);
+end
+
+perform
