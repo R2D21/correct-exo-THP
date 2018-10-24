@@ -1,5 +1,5 @@
 # coding: utf-8
-require 'tri_bulle/tri'
+require 'tri'
 describe 'trie a bulle' do
   it 'tri a bulle n° 1' do
     array = [4,87,98,45]

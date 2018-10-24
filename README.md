@@ -1,2 +1,0 @@
-Rémi Boivin
-Jérémie Edery
