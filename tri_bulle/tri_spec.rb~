@@ -1,0 +1,5 @@
+describe 'trie a bulle' do
+  it 'tri a bulle' do
+    expect(trie(array[4,2,0,1]).to eq(array[0,1,2,4])
+  end
+end
